@@ -3,6 +3,7 @@ import MiComponente from './ApiRick.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderRick from './Header.js';
 import PaginacionRick from './Paginacion.js';
+import Buscador from './BuscadorFiltrado.js';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       
 
         <main>
+          <Buscador/>
           <PaginacionRick/>
           <MiComponente/>
         </main>
