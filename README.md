@@ -38,6 +38,10 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 
 Las contribuciones son bienvenidas. Si encuentras algún error o tienes una mejora, ¡siéntete libre de abrir un problema o enviar un pull request!
 
+## Estado del Proyecto
+
+![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-orange)
+
 ## Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
