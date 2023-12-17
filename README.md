@@ -1,5 +1,5 @@
-![Logo del proyecto](/public/rickand.png)
-<img src="/public/rickand.png" alt="Descripción de la imagen" width="200"/>
+<img src="/public/rickand.png" alt="Descripción de la imagen" width="400"/>
+Logo del proyecto.
 
 
 
