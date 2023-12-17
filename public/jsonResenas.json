@@ -1,0 +1,104 @@
+{
+  "reseñas": [
+    {
+      "usuario": "Juan",
+      "comentario": "Me encanta esta serie, es super divertida y tiene un humor muy inteligente.",
+      "puntuacion": "9"
+    },
+    {
+      "usuario": "Maria",
+      "comentario": "No me gusta mucho, no entiendo el humor.",
+      "puntuacion": "4"
+    },
+    {
+      "usuario": "Pedro",
+      "comentario": "Es una de mis series favoritas, siempre me hace reír.",
+      "puntuacion": "10"
+    },
+    {
+      "usuario": "Laura",
+      "comentario": "La trama es muy interesante y los personajes son geniales.",
+      "puntuacion": "8"
+    },
+    {
+      "usuario": "Carlos",
+      "comentario": "No es de mi estilo, no me parece graciosa.",
+      "puntuacion": "3"
+    },
+    {
+      "usuario": "Ana",
+      "comentario": "Rick y Morty es una serie brillante, tiene una gran calidad en su guión.",
+      "puntuacion": "9"
+    },
+    {
+      "usuario": "Luis",
+      "comentario": "Me gusta mucho la animación y los temas que aborda.",
+      "puntuacion": "8"
+    },
+    {
+      "usuario": "Sofia",
+      "comentario": "Es una serie muy original y diferente a todo lo que he visto.",
+      "puntuacion": "9"
+    },
+    {
+      "usuario": "Andres",
+      "comentario": "No me gusta el estilo de dibujo y encuentro la trama confusa.",
+      "puntuacion": "5"
+    },
+    {
+      "usuario": "Gabriela",
+      "comentario": "Es una serie muy entretenida, siempre me sorprende.",
+      "puntuacion": "9"
+    },
+    {
+      "usuario": "John Doe",
+      "comentario": "La serie es genial, llena de humor y aventuras.",
+      "puntuacion": 9
+    },
+    {
+      "usuario": "Jane Smith",
+      "comentario": "Me encanta la inteligencia y complejidad de los guiones.",
+      "puntuacion": 10
+    },
+    {
+      "usuario": "Michael Johnson",
+      "comentario": "No es mi tipo de humor, no me gusta.",
+      "puntuacion": 2
+    },
+    {
+      "usuario": "Sara Davis",
+      "comentario": "Me gusta cómo explora temas filosóficos.",
+      "puntuacion": 8
+    },
+    {
+      "usuario": "David Wilson",
+      "comentario": "Es una serie muy entretenida, no me canso de verla.",
+      "puntuacion": 9
+    },
+    {
+      "usuario": "Emily Brown",
+      "comentario": "Los personajes son únicos y muy bien desarrollados.",
+      "puntuacion": 10
+    },
+    {
+      "usuario": "Daniel Taylor",
+      "comentario": "No entiendo el hype, no me parece tan buena.",
+      "puntuacion": 5
+    },
+    {
+      "usuario": "Olivia Martinez",
+      "comentario": "Me encanta el estilo de animación, es muy original.",
+      "puntuacion": 9
+    },
+    {
+      "usuario": "Sophia Garcia",
+      "comentario": "Una de las mejores series de animación que he visto.",
+      "puntuacion": 10
+    },
+    {
+      "usuario": "William Lopez",
+      "comentario": "No me gusta el humor tan absurdo.",
+      "puntuacion": 4
+    }
+  ]
+}
