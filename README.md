@@ -45,3 +45,6 @@ Las contribuciones son bienvenidas. Si encuentras algún error o tienes una mejo
 ## Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
+
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=EzequielPalma&theme=dark&locale=es)](https://git.io/streak-stats)
