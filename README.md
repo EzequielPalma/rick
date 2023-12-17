@@ -1,4 +1,4 @@
-![Logo del proyecto](file:///C:/Users/Ezequiel/Desktop/bootstrap/rick/src/logoRick.svg)
+![Logo del proyecto](/public/rickand.png)
 
 
 # Proyecto Rick y Morty
