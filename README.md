@@ -27,7 +27,9 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 
 1. Clona este repositorio.
 2. Ejecuta `npm install` para instalar las dependencias.
-3. Ejecuta `npm start` para iniciar la aplicación en modo desarrollo.
+3. Ejecuta `npm install react-bootstrap bootstrap` para instalar bootstrap.
+4. Ejecuta `npm install react-router-dom` para instalar las dependencias de React-Router.
+5. Ejecuta `npm start` para iniciar la aplicación en modo desarrollo.
 
 ## Capturas de Pantalla
 
