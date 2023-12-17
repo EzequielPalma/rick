@@ -39,7 +39,7 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 Las contribuciones son bienvenidas. Si encuentras algún error o tienes una mejora, ¡siéntete libre de abrir un problema o enviar un pull request!
 
 ## Estado del Proyecto
-![Mínimo producto viable](https://img.shields.io/badge/Estado-En%20Completado-green)
+![Mínimo producto viable](https://img.shields.io/badge/MVP%20Completado-green)
 ![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-orange)
 
 ## Licencia
