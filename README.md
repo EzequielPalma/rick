@@ -1,5 +1,5 @@
 <img src="/public/rickand.png" alt="Descripción de la imagen" width="400"/>
-Logo del proyecto.
+*Figura 1: Logo del proyecto*
 
 
 
