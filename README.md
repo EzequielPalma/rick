@@ -1,4 +1,6 @@
 ![Logo del proyecto](/public/rickand.png)
+<img src="/public/rickand.png" alt="Descripción de la imagen" width="200"/>
+
 
 
 # Proyecto Rick y Morty
