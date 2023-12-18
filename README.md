@@ -33,8 +33,8 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](captura1.jpg)
-![Captura de pantalla 2](captura2.jpg)
+![Captura de pantalla 1](./captura1.jpg)
+![Captura de pantalla 2](./captura2.jpg)
 
 En estas capturas podemos ver que tiene un diseño responsive en ambas páginas del proyecto.
 
