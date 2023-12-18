@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import MiComponente from './ApiRick';
-import './filtros.css';
 
 function FiltradorBuscador() {
   const [nameFilter, setNameFilter] = useState('');
@@ -57,24 +56,28 @@ function FiltradorBuscador() {
         <option value="dead">Muerto</option>
         <option value="unknown">Desconocido</option>
       </select>
-
-      <select
-        name="pagina2"
-        id="pagina2"
-        value={currentPage}
-        onChange={handlePageChange}
+      
+      <div
+        id="paginaBotones"
       >
-        <option value="0">Accede a otras páginas!</option>
-        {Array.from({ length: 42 }, (_, index) => (
-          <option key={index + 1} value={index + 1}>
-            {index + 1}
-          </option>
-        ))}
-      </select>
-    
-      <button onClick={decrementPage}>Anterior</button>
-      <button onClick={incrementPage}>Siguiente</button>
-
+        <button id="botonAnterior" onClick={decrementPage}>Anterior</button>
+        <select
+          name="pagina2"
+          id="pagina2"
+          value={currentPage}
+          onChange={handlePageChange}
+        >
+          <option value="0">Accede a otras páginas!</option>
+          {Array.from({ length: 42 }, (_, index) => (
+            <option key={index + 1} value={index + 1}>
+              {index + 1}
+            </option>
+          ))}
+        </select>
+      
+        
+        <button id="botonSiguiente" onClick={incrementPage}>Siguiente</button>
+      </div>
 
       <MiComponente nameFilter={nameFilter} statusFilter={statusFilter} currentPage={currentPage} />
     </div>

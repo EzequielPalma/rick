@@ -27,12 +27,7 @@
   background-color: #0056b3;
 }
 
-.App-logo {
-  pointer-events: none;
-  top: 10px;
-  left: 10px;
-  position: relative;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

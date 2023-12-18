@@ -11,10 +11,8 @@ function PaginaOpiniones() {
 
       
 
-        <main>
+        
           <ResenasComponent/>
-         <h1>HOLAAAAAAAAAAAAAAAAAAAAAA</h1>
-        </main>
         
       
     </>

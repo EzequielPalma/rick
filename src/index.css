@@ -1,23 +1,63 @@
+@charset "UTF-8";
 body {
   width: 100%;
   background-color: #131E29 !important;
-  width: 100%;
   margin: 0;
 }
 body header {
   background-color: #131E29 !important;
-  top: 0;
+  top: -15px;
   z-index: 1;
   position: fixed;
-  height: 210px;
+  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  body header {
+    height: 35vw;
+  }
+}
+@media (max-width: 450px) {
+  body header {
+    height: 44vw;
+  }
+}
+body header .App-logo {
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  body header .App-logo {
+    height: 23vw;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  body header .App-logo {
+    height: 23vw;
+    margin-top: 5vw;
+  }
+}
 body header .btn-group {
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  body header .btn-group .btn {
+    height: 5.5vw;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 450px) {
+  body header .btn-group .btn {
+    height: 7vw;
+    font-size: 2.5vw;
+  }
 }
 body main {
   margin-top: 300px;
@@ -25,18 +65,94 @@ body main {
   justify-content: center;
   position: relative;
 }
+@media (max-width: 768px) {
+  body main {
+    margin-top: 36vw;
+  }
+}
+@media (max-width: 450px) {
+  body main {
+    margin-top: 47vw;
+  }
+}
+body main #conjuntosFiltrados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 body main #conjuntosFiltrados #name-filter {
-  margin-right: 20px;
-  width: 200px;
+  width: 32.2vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body main #conjuntosFiltrados #name-filter {
+    font-size: 2vw;
+    width: 30vw;
+    margin: 5px auto;
+  }
+}
+@media (max-width: 450px) {
+  body main #conjuntosFiltrados #name-filter {
+    font-size: 4vw;
+    width: 50vw;
+    margin: 5px auto;
+  }
 }
 body main #conjuntosFiltrados #status-filter {
-  margin-right: 20px;
+  width: 32.2vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body main #conjuntosFiltrados #status-filter {
+    font-size: 2vw;
+    width: 30vw;
+    margin: 5px auto;
+  }
+}
+@media (max-width: 450px) {
+  body main #conjuntosFiltrados #status-filter {
+    font-size: 4vw;
+    width: 50vw;
+    margin: 5px auto;
+  }
 }
 body main #conjuntosFiltrados #pagina2 {
   margin-right: 20px;
+  width: 8vw;
+  font-size: 1.5vw;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  body main #conjuntosFiltrados #pagina2 {
+    width: 9vw;
+    font-size: 3.5vw;
+    margin-right: 5vw;
+  }
 }
 body main #conjuntosFiltrados button {
+  width: 10.5vw;
+  font-size: 1.2vw;
+}
+@media (max-width: 450px) {
+  body main #conjuntosFiltrados button {
+    font-size: 3vw;
+    width: 16.2vw;
+  }
+}
+body main #conjuntosFiltrados #botonAnterior {
   margin-right: 20px;
+}
+@media (max-width: 450px) {
+  body main #conjuntosFiltrados #botonAnterior {
+    margin-right: 5vw;
+  }
+}
+@media (max-width: 450px) {
+  body main #conjuntosFiltrados #botonSiguiente {
+    margin-right: 0;
+  }
 }
 body main div.card {
   background-color: #60a85f;
@@ -51,12 +167,28 @@ body main div.card {
   align-items: center;
 }
 body main div.card h5 {
-  font-size: 2vw;
+  font-size: 1.5vw;
+}
+@media (max-width: 768px) {
+  body main div.card h5 {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 450px) {
+  body main div.card h5 {
+    font-size: 3.5vw;
+  }
 }
 body main div.card p {
   font-size: 1vw;
 }
+@media (max-width: 450px) {
+  body main div.card p {
+    font-size: 3vw;
+  }
+}
 
+/* Resto del código */
 /* Header, navbar y logos */
 nav {
   background-color: #25282A;
@@ -66,10 +198,19 @@ nav .nav-link.active {
 }
 
 header img {
-  width: 200px;
+  width: 160px;
   height: auto;
   position: relative;
   right: -240px;
+}
+
+.btn-group {
+  top: -15px;
+  position: relative;
+}
+
+#botonPersonajes {
+  margin-right: 20px;
 }
 
 #logo img {
@@ -106,6 +247,7 @@ select#pagina {
 .allCards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 1.5vw;
   grid-template-rows: auto;
   gap: 30px 10px;
 }
@@ -132,6 +274,12 @@ div.card:hover {
   .allCards .card {
     width: 30vw;
   }
+  .allCards .card h5 {
+    font-size: 2.5vw;
+  }
+  .allCards .card p {
+    font-size: 2vw;
+  }
 }
 @media (max-width: 450px) {
   /* navbar y logo */
@@ -142,11 +290,29 @@ div.card:hover {
   nav {
     height: 18.5vw;
   }
+  #conjuntosFiltrados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .allCards {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
   }
   .allCards .card {
-    width: 40vw;
+    width: 50vw;
   }
+  .allCards .card h5 {
+    font-size: 3.5vw;
+  }
+  .allCards .card p {
+    font-size: 3vw;
+  }
+}
+.tarjeta {
+  background-color: #60a85f;
+  color: black;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

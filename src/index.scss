@@ -1,29 +1,61 @@
 $--bs-body-bg: #131E29 !important;
 $--bs-nav-pills-link-active-bg: #101820 !important;
 $margenFiltrado: 20px;
-
+$botonesWidth: 10.5vw;
 
 body {
   width: 100%;
   background-color: $--bs-body-bg;
-
-  width: 100%;
   margin: 0;
 
   header {
     background-color: $--bs-body-bg;
-    top: 0;
+    top: -15px;
     z-index: 1;
     position: fixed;
-    height: 210px;
+    height: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 768px) {
+      height: 35vw;
+    }
+
+    @media (max-width: 450px) {
+      height: 44vw;
+    }
+    .App-logo {
+      pointer-events: none;
+      top: 0px;
+      left: 0px;
+      position: relative;
+
+      @media (max-width: 768px) {
+        height: 23vw;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 450px) {
+        height: 23vw;
+        margin-top: 5vw;
+      }
+    }
     .btn-group {
       margin-top: 20px;
+      .btn {
+        @media (max-width: 768px) {
+          height: 5.5vw;
+          font-size: 2vw;
+        }
+
+        @media (max-width: 450px) {
+          height: 7vw;
+          font-size: 2.5vw;  
+        }
+      }
     }
   }
 
@@ -33,38 +65,86 @@ body {
     justify-content: center;
     position: relative;
 
+    @media (max-width: 768px) {
+      margin-top:36vw
+    }
+
+    @media (max-width: 450px) {
+      margin-top:47vw        
+    }
+
     #conjuntosFiltrados {
 
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       #name-filter {
-
-        margin-right: $margenFiltrado;
-        width: 200px;
-
+        width: 32.2vw;
+        margin-bottom: $margenFiltrado;
+        text-align: center;
+        @media (max-width: 768px) {
+          font-size: 2vw;
+          width: 30vw;
+          margin: 5px auto;
+        }
+        @media (max-width: 450px) {
+          font-size: 4vw;
+          width: 50vw;
+          margin: 5px auto;
+        }
       }
 
       #status-filter {
-        margin-right: $margenFiltrado;
+        width: 32.2vw;
+        margin-bottom: $margenFiltrado;
+        text-align: center;
 
-
+        @media (max-width: 768px) {
+          font-size: 2vw;
+          width: 30vw;
+          margin: 5px auto;
+        }
+        @media (max-width: 450px) {
+          font-size: 4vw;
+          width: 50vw;
+          margin: 5px auto;
+        }
       }
 
       #pagina2 {
         margin-right: $margenFiltrado;
-
-
+        width: 8vw;
+        font-size: 1.5vw;
+        text-align: center;
+        @media (max-width: 450px) {
+          width: 9vw;
+          font-size: 3.5vw;
+          margin-right: 5vw;
+        }
       }
 
       button {
+        width: $botonesWidth;
+        font-size: 1.2vw;
+        @media (max-width: 450px) {
+          font-size: 3vw;
+          width: 16.2vw;
+        }
+      }
+      #botonAnterior{
         margin-right: $margenFiltrado;
-
-
-
+        @media (max-width: 450px) {
+          margin-right: 5vw;
+        }
+        
       }
 
-
-
+      #botonSiguiente{
+        @media (max-width: 450px) {
+          margin-right: 0;
+        }
+      }
     }
 
     div.card {
@@ -79,19 +159,27 @@ body {
       justify-content: center;
       align-items: center;
 
-      h5{
-        font-size: 2vw;
+      h5 {
+        font-size: 1.5vw;
+        @media (max-width: 768px) {
+          font-size: 2.5vw;
+        }
+        @media (max-width: 450px) {
+          font-size: 3.5vw;
+        }
       }
 
-      p{
+      p {
         font-size: 1vw;
+        @media (max-width: 450px) {
+          font-size: 3vw;
+        }
       }
-    
     }
-
   }
-
 }
+
+/* Resto del código */
 
 
 
@@ -107,10 +195,18 @@ nav {
 }
 
 header img {
-  width: 200px;
+  width: 160px;
   height: auto;
   position: relative;
   right: -240px;
+}
+.btn-group{
+  top: -15px;
+  position: relative;
+}
+#botonPersonajes {
+  margin-right: 20px;
+
 }
 
 #logo img {
@@ -147,7 +243,7 @@ select#pagina {
 .allCards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
+  margin-top: 1.5vw;
   grid-template-rows: auto;
   gap: 30px 10px;
 }
@@ -185,11 +281,11 @@ div.card:hover {
       width: 30vw;
 
       h5{
-        font-size: 2vw;
+        font-size: 2.5vw;
       }
 
       p{
-        font-size: 1vw;
+        font-size: 2vw;
       }
     }
   }
@@ -198,7 +294,7 @@ div.card:hover {
 
 @media (max-width: 450px) {
   /* navbar y logo */
-
+    
   #logo img {
     height: 18.5vw;
     width: auto;
@@ -207,6 +303,17 @@ div.card:hover {
   nav {
     height: 18.5vw;
   }
+  #conjuntosFiltrados {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    
+
+
+
+  }
 
   .allCards {
     grid-template-columns: repeat(1, 1fr);
@@ -214,16 +321,25 @@ div.card:hover {
     grid-template-rows: auto;
 
     .card{
-      width: 40vw;
+      width: 50vw;
 
       h5{
-        font-size: 2vw;
+        font-size: 3.5vw;
       }
 
       p{
-        font-size: 1vw;
+        font-size: 3vw;
+        
       }
     }
   }
 
+}
+
+.tarjeta {
+  background-color: #60a85f;
+  color: black;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
 }

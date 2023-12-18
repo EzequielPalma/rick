@@ -8,7 +8,7 @@ function BotoneraNav() {
   return (
     <ButtonGroup aria-label="Basic example">
       <Link to="/">
-        <Button variant="secondary">Personajes</Button>
+        <Button id="botonPersonajes" variant="secondary">Personajes</Button>
       </Link>
       <Link to="/PaginaOpiniones">
         <Button variant="secondary">Reseñas de la serie</Button>

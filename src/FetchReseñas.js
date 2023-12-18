@@ -22,8 +22,10 @@ const ResenasComponent = () => {
       {resenas.map((item, index) => (
         <div key={index} className="tarjeta">
           <h4>{item.usuario}</h4>
+          <hr></hr>
           <h5>{item.comentario}</h5>
-          <p>{item.puntuacion}</p>
+          <hr></hr>
+          <p>La puntuación es <strong>{item.puntuacion}/10</strong></p>
         </div>
       ))}
     </div>
