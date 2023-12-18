@@ -1,4 +1,6 @@
-![Logo del proyecto](/public/rickand.png)
+<img src="/public/rickand.png" alt="Descripción de la imagen" width="400"/>
+*Figura 1: Logo del proyecto*
+
 
 
 # Proyecto Rick y Morty
@@ -25,7 +27,9 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 
 1. Clona este repositorio.
 2. Ejecuta `npm install` para instalar las dependencias.
-3. Ejecuta `npm start` para iniciar la aplicación en modo desarrollo.
+3. Ejecuta `npm install react-bootstrap bootstrap` para instalar bootstrap.
+4. Ejecuta `npm install react-router-dom` para instalar las dependencias de React-Router.
+5. Ejecuta `npm start` para iniciar la aplicación en modo desarrollo.
 
 ## Capturas de Pantalla
 
@@ -36,6 +40,13 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 
 Las contribuciones son bienvenidas. Si encuentras algún error o tienes una mejora, ¡siéntete libre de abrir un problema o enviar un pull request!
 
+## Estado del Proyecto
+![Mínimo producto viable](https://img.shields.io/badge/MVP-%20Completado-green)
+![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20Desarrollo-orange)
+
 ## Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
+
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=EzequielPalma&theme=dark&locale=es)](https://git.io/streak-stats)
