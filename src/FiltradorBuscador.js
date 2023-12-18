@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MiComponente from './ApiRick';
+import './filtros.css';
 
 function FiltradorBuscador() {
   const [nameFilter, setNameFilter] = useState('');
@@ -35,7 +36,7 @@ function FiltradorBuscador() {
 
 
   return (
-    <>
+    <div id="conjuntosFiltrados">
       <input
         name="name-filter"
         id="name-filter"
@@ -63,10 +64,12 @@ function FiltradorBuscador() {
         value={currentPage}
         onChange={handlePageChange}
       >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        {/* Agrega más opciones según sea necesario */}
+        <option value="0">Accede a otras páginas!</option>
+        {Array.from({ length: 42 }, (_, index) => (
+          <option key={index + 1} value={index + 1}>
+            {index + 1}
+          </option>
+        ))}
       </select>
     
       <button onClick={decrementPage}>Anterior</button>
@@ -74,7 +77,7 @@ function FiltradorBuscador() {
 
 
       <MiComponente nameFilter={nameFilter} statusFilter={statusFilter} currentPage={currentPage} />
-    </>
+    </div>
   );
 }
 

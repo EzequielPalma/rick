@@ -1,8 +1,8 @@
-@charset "UTF-8";
+
+
 .App {
   text-align: center;
 }
-
 /* Añade estos estilos en tu archivo CSS o SCSS */
 .scroll-to-top-button {
   position: fixed;
@@ -30,7 +30,7 @@
 .App-logo {
   pointer-events: none;
   top: 10px;
-  left: 10px;
+  left: 10px;  
   position: relative;
 }
 
@@ -39,6 +39,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -61,4 +62,4 @@
   to {
     transform: rotate(360deg);
   }
-}/*# sourceMappingURL=App.css.map */
+}

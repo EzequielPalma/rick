@@ -1,5 +1,7 @@
 $--bs-body-bg: #131E29 !important;
 $--bs-nav-pills-link-active-bg: #101820 !important;
+$margenFiltrado: 20px;
+
 
 body {
   width: 100%;
@@ -20,16 +22,78 @@ body {
     justify-content: center;
     align-items: center;
 
-    .btn-group{
+    .btn-group {
       margin-top: 20px;
     }
   }
 
   main {
     margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    #conjuntosFiltrados {
+
+
+
+      #name-filter {
+
+        margin-right: $margenFiltrado;
+        width: 200px;
+
+      }
+
+      #status-filter {
+        margin-right: $margenFiltrado;
+
+
+      }
+
+      #pagina2 {
+        margin-right: $margenFiltrado;
+
+
+      }
+
+      button {
+        margin-right: $margenFiltrado;
+
+
+
+      }
+
+
+
+    }
+
+    div.card {
+      background-color: #60a85f;
+      text-align: center;
+      margin: 10px auto;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      h5{
+        font-size: 2vw;
+      }
+
+      p{
+        font-size: 1vw;
+      }
+    
+    }
+
   }
 
 }
+
+
 
 
 /* Header, navbar y logos */
@@ -63,7 +127,7 @@ select#pagina {
   width: 220px;
   position: relative;
   left: 35px;
-  margin: 35px 0px;
+  margin: 35px 20px;
 }
 
 #filters {
@@ -88,19 +152,7 @@ select#pagina {
   gap: 30px 10px;
 }
 
-div.card {
-  background-color: #60a85f;
-  text-align: center;
-  margin: 10px auto;
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
 
-}
 
 div.card:hover {
   transform: scale(1.1);
@@ -122,6 +174,56 @@ div.card:hover {
 
   nav {
     height: 18.5vw;
+  }
+
+  .allCards {
+    grid-template-columns: repeat(2, 1fr);
+  
+    grid-template-rows: auto;
+
+    .card{
+      width: 30vw;
+
+      h5{
+        font-size: 2vw;
+      }
+
+      p{
+        font-size: 1vw;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 450px) {
+  /* navbar y logo */
+
+  #logo img {
+    height: 18.5vw;
+    width: auto;
+  }
+
+  nav {
+    height: 18.5vw;
+  }
+
+  .allCards {
+    grid-template-columns: repeat(1, 1fr);
+  
+    grid-template-rows: auto;
+
+    .card{
+      width: 40vw;
+
+      h5{
+        font-size: 2vw;
+      }
+
+      p{
+        font-size: 1vw;
+      }
+    }
   }
 
 }

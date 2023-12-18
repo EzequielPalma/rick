@@ -14,6 +14,8 @@ function BotoneraNav() {
         <Button variant="secondary">Reseñas de la serie</Button>
       </Link>
     </ButtonGroup>
+
+    
   );
 }
 

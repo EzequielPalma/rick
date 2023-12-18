@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import ApiUrlBuilder from './ApiBuilder';
 
-const MiComponente = ({ pagina, nameFilter, statusFilter, currentPage }) => {
+const MiComponente = ({  nameFilter, statusFilter, currentPage }) => {
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
-    let url = "https://rickandmortyapi.com/api/character";
-
-    if (pagina == "0") {
-      url = "https://rickandmortyapi.com/api/character";
-    }  
    
-    if (currentPage) {
-      url = `https://rickandmortyapi.com/api/character/?page=${currentPage}&name=${nameFilter}&status=${statusFilter}`;
+    const apiUrl = ApiUrlBuilder({ currentPage, nameFilter, statusFilter });
+    fetch(apiUrl)
 
-    }    
-
-    else {
-      url = "https://rickandmortyapi.com/api/character/?page=" + pagina;
-    }
-    fetch(url)
       .then(response => response.json())
       .then(data => {
         // Actualizar el estado solo si se obtienen nuevos datos
@@ -30,7 +20,7 @@ const MiComponente = ({ pagina, nameFilter, statusFilter, currentPage }) => {
           const divItem = document.createElement("div");
           divItem.innerHTML =
             `
-              <div class="card" style="width: 18rem;">
+              <div class="card";">
                 <img src="${item.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">${item.name}</h5>
@@ -44,7 +34,7 @@ const MiComponente = ({ pagina, nameFilter, statusFilter, currentPage }) => {
         });
       })
       .catch(error => console.error('Error al obtener los datos:', error));
-  }, [pagina, nameFilter, statusFilter, currentPage]);
+  }, [nameFilter, statusFilter, currentPage]);
 
   return (
     <div id="resultado" className='allCards'></div>

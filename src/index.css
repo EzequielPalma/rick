@@ -21,6 +21,40 @@ body header .btn-group {
 }
 body main {
   margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body main #conjuntosFiltrados #name-filter {
+  margin-right: 20px;
+  width: 200px;
+}
+body main #conjuntosFiltrados #status-filter {
+  margin-right: 20px;
+}
+body main #conjuntosFiltrados #pagina2 {
+  margin-right: 20px;
+}
+body main #conjuntosFiltrados button {
+  margin-right: 20px;
+}
+body main div.card {
+  background-color: #60a85f;
+  text-align: center;
+  margin: 10px auto;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+body main div.card h5 {
+  font-size: 2vw;
+}
+body main div.card p {
+  font-size: 1vw;
 }
 
 /* Header, navbar y logos */
@@ -52,7 +86,7 @@ select#pagina {
   width: 220px;
   position: relative;
   left: 35px;
-  margin: 35px 0px;
+  margin: 35px 20px;
 }
 
 #filters {
@@ -76,19 +110,6 @@ select#pagina {
   gap: 30px 10px;
 }
 
-div.card {
-  background-color: #60a85f;
-  text-align: center;
-  margin: 10px auto;
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
 div.card:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -103,5 +124,29 @@ div.card:hover {
   }
   nav {
     height: 18.5vw;
+  }
+  .allCards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .allCards .card {
+    width: 30vw;
+  }
+}
+@media (max-width: 450px) {
+  /* navbar y logo */
+  #logo img {
+    height: 18.5vw;
+    width: auto;
+  }
+  nav {
+    height: 18.5vw;
+  }
+  .allCards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .allCards .card {
+    width: 40vw;
   }
 }/*# sourceMappingURL=index.css.map */
