@@ -20,7 +20,7 @@ El objetivo de este proyecto es explorar el uso de React y la integración con u
 ## Tecnologías Utilizadas
 
 - React
-- Bootstrap para el estilo
+- Bootstrap para el estilo y componentes
 - React Router para la navegación entre páginas
 
 ## Instrucciones de Uso
