@@ -60,7 +60,6 @@ function FiltradorBuscador() {
       <div
         id="paginaBotones"
       >
-        <button id="botonAnterior" onClick={decrementPage}>Anterior</button>
         <select
           name="pagina2"
           id="pagina2"
@@ -75,8 +74,8 @@ function FiltradorBuscador() {
           ))}
         </select>
       
-        
-        <button id="botonSiguiente" onClick={incrementPage}>Siguiente</button>
+        <button onClick={decrementPage}>Anterior</button>
+        <button onClick={incrementPage}>Siguiente</button>
       </div>
 
       <MiComponente nameFilter={nameFilter} statusFilter={statusFilter} currentPage={currentPage} />

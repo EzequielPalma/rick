@@ -5,7 +5,6 @@ const MiComponente = ({  nameFilter, statusFilter, currentPage }) => {
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
-   
     const apiUrl = ApiUrlBuilder({ currentPage, nameFilter, statusFilter });
     fetch(apiUrl)
 
