@@ -2,10 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './Layout';
-import MiComponente from './ApiRick';
 import PaginaOpiniones from './PaginaOpiniones';
 import FiltradorBuscador from './FiltradorBuscador';
-import ScrollToTopButton from './ScrollToTopButton';
 import './App.css';
 
 
@@ -17,7 +15,7 @@ function App() {
           path="/"
           element={
             <Layout>
-              <FiltradorBuscador />              
+              <FiltradorBuscador/>              
             </Layout>
           }
         />
@@ -25,7 +23,7 @@ function App() {
           path="/PaginaOpiniones"
           element={
             <Layout>
-              <PaginaOpiniones />
+              <PaginaOpiniones/>
             </Layout>
           }
         />
