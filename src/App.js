@@ -17,10 +17,7 @@ function App() {
           path="/"
           element={
             <Layout>
-              <FiltradorBuscador />
-              
-              <MiComponente />
-              <ScrollToTopButton/>
+              <FiltradorBuscador />              
             </Layout>
           }
         />

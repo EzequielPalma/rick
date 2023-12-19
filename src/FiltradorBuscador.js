@@ -4,7 +4,7 @@ import MiComponente from './ApiRick';
 function FiltradorBuscador() {
   const [nameFilter, setNameFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
-  const [currentPage, setCurrentPage] = useState('1'); // Página por defecto es la 1
+  const [currentPage, setCurrentPage] = useState('1');
 
   const handleNameChange = (e) => {
     const selectedName = e.target.value;
@@ -56,10 +56,12 @@ function FiltradorBuscador() {
         <option value="dead">Muerto</option>
         <option value="unknown">Desconocido</option>
       </select>
-      
+
       <div
         id="paginaBotones"
       >
+        <button id="botonAnterior" onClick={decrementPage}>Anterior</button>
+
         <select
           name="pagina2"
           id="pagina2"
@@ -73,9 +75,8 @@ function FiltradorBuscador() {
             </option>
           ))}
         </select>
-      
-        <button onClick={decrementPage}>Anterior</button>
-        <button onClick={incrementPage}>Siguiente</button>
+
+        <button id="botonSiguiente" onClick={incrementPage}>Siguiente</button>
       </div>
 
       <MiComponente nameFilter={nameFilter} statusFilter={statusFilter} currentPage={currentPage} />
